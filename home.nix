@@ -103,6 +103,10 @@ in
 
   programs.git = {
     enable = true;
+    settings = {
+      name = "Kletus";
+      email = "amukheni@hotmail.com";
+    };
   };
 
   xdg.configFile = builtins.mapAttrs (name: subpath: {
