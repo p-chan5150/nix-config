@@ -61,8 +61,8 @@ in
     XMODIFIERS = "@im=fcitx";
     INPUT_METHOD = "fcitx";
     EDITOR = "nvim";
-    QT_QPA_PLATFORM "wayland"
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
   };
 
   programs.yazi = {
@@ -111,9 +111,4 @@ in
     source = symlink "${dotfiles}/${subpath}";
     recursive = true;
   }) configs;
-
-  xdg.configFile."nvim" = {
-    source = symlink "${dotfiles}/nvim/";
-    recursive = true;
-  };
 }
