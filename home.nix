@@ -99,14 +99,6 @@ in
     enable = true;
   };
 
-  programs.git = {
-    enable = true;
-    settings = {
-      name = "Kletus";
-      email = "amukheni@hotmail.com";
-    };
-  };
-
   xdg.configFile = builtins.mapAttrs (name: subpath: {
     source = symlink "${dotfiles}/${subpath}";
     recursive = true;
