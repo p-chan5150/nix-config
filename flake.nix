@@ -1,5 +1,5 @@
 {
-  description = "nix os btw";
+  description = "larp";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -20,7 +20,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.kletus = import ./home.nix;
-            backupFileExtension = "backup";
+            backupFileExtension = "bak";
           };
         }
       ];

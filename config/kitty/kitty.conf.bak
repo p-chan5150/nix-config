@@ -1,0 +1,59 @@
+# dynamic_background_opacity yes
+# background_opacity 0.8
+# background_blur 2
+# background #000000
+# cursor     #c7c7c7
+# cursor_text_color #feffff
+# selection_foreground #3e3e3e
+# selection_background #c1ddff
+# foreground #c8c8c8
+# color0     #252525
+# color8     #555555
+# color1     #be7472
+# color9     #ff9900
+# color2     #709772
+# color10    #97bb98
+# color3     #989772
+# color11    #fefdbc
+# color4     #7199bc
+# color12    #9fbdde
+# color5     #727399
+# color13    #989abc
+# color6     #719899
+# color14    #6fbbbc
+# color7     #7f7f7f
+# color15    #feffff
+# font_family      0xProtoNerdFont
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
+
+font_size 13
+
+# Map Ctrl + Backspace to delete the previous word
+map ctrl+backspace send_text all \x17
+
+# Map Ctrl + Delete to delete the next word
+map ctrl+delete send_text all \x1b[3;5~\x08
+
+map ctrl+l send_text all \x1b[C
+
+# map ctrl+j send_text all \x1b[B
+
+# map ctrl+k send_text all \x1b[A
+
+map ctrl+h send_text all \x1b[D
+
+
+# BEGIN_KITTY_THEME
+# Black Metal
+include current-theme.conf
+# END_KITTY_THEME
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="GoogleSansCode Nerd Font Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS

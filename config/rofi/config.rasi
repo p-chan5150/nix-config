@@ -1,0 +1,10 @@
+configuration {
+    modi: "drun,run,window";
+    matching: "fuzzy";
+    sort: true;
+    sorting-method: "fzf";
+    drun-match-fields: "name,generic,exec,categories";
+    disable-history: false;
+}
+
+@theme "/usr/share/rofi/themes/dmenu.rasi"
