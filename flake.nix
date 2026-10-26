@@ -15,7 +15,6 @@
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        inputs.spicetify-nix.homeManagerModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager = {
@@ -23,10 +22,13 @@
             useUserPackages = true;
             users.kletus = import ./home.nix;
             backupFileExtension = "bak";
+            extraSpecialArgs = { inherit inputs; };
+            sharedModules = [
+              inputs.spicetify-nix.homeManagerModules.default
+            ];
           };
         }
       ];
-      extraSpecialArgs = { inherit inputs; };
     };
   };
 

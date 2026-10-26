@@ -103,7 +103,7 @@ in
 
   programs.git = {
     enable = true;
-    usermail = "amukheni@hotmail.com";
+    useremail = "amukheni@hotmail.com";
     username = "kletus";
   };
 
