@@ -40,6 +40,7 @@ in
     qdirstat
     tixati
     exiftool
+    trash-cli
   ];
 
   i18n.inputMethod = {
