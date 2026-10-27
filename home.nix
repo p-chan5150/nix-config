@@ -41,6 +41,7 @@ in
     tixati
     exiftool
     trash-cli
+    bazaar
   ];
 
   i18n.inputMethod = {
