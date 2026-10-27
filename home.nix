@@ -54,8 +54,8 @@ in
   };
 
   home.sessionVariables = {
-    GTK_IM_MODULE = "fcitx";
-    QT_IM_MODULE = "fcitx";
+    # GTK_IM_MODULE = "fcitx";
+    # QT_IM_MODULE = "fcitx";
     XMODIFIERS = "@im=fcitx";
     INPUT_METHOD = "fcitx";
     EDITOR = "nvim";
@@ -66,17 +66,17 @@ in
   programs.yazi = {
     enable = true;
 
-    plugins = with pkgs.yaziPlugins; {
-      inherit
-        chmod
-        mount
-        office
-        compress
-        mediainfo
-        ;
-      "mime-ext" = mime-ext;
-      "recycle-bin" = recycle-bin;
-    };
+    # plugins = with pkgs.yaziPlugins; {
+    #   inherit
+    #     chmod
+    #     mount
+    #     office
+    #     compress
+    #     mediainfo
+    #     ;
+    #   "mime-ext" = mime-ext;
+    #   "recycle-bin" = recycle-bin;
+    # };
   };
 
   programs.spicetify =
