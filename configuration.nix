@@ -56,7 +56,7 @@
     wget
     git
     btop
-    tree
+    yazi
     xwayland-satellite
   ];
 
