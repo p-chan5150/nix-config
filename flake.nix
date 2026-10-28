@@ -8,6 +8,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
@@ -25,6 +32,7 @@
             extraSpecialArgs = { inherit inputs; };
             sharedModules = [
               inputs.spicetify-nix.homeManagerModules.default
+              inputs.zen-browser.homeModules.beta
             ];
           };
         }

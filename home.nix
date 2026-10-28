@@ -15,6 +15,7 @@ let
   };
 in
 {
+
   home = {
     username = "kletus";
     homeDirectory = "/home/kletus";
@@ -42,6 +43,7 @@ in
     exiftool
     trash-cli
     bazaar
+    kew
   ];
 
   i18n.inputMethod = {
@@ -99,6 +101,11 @@ in
 
   programs.bash = {
     enable = true;
+  };
+
+  programs.zen-browser = {
+    enable = true;
+    setAsDefaultBrowser = true;
   };
 
   xdg.configFile = builtins.mapAttrs (name: subpath: {
